@@ -2,7 +2,7 @@
 
 <script type="text/javascript" language="JavaScript">
     var dtm_deviceCheck = /Mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
-    const dataLayer = {
+    var dataLayer = {
 		'ecommerce' : {			
 	product : [{	
 		'category' : "loan",
@@ -259,7 +259,7 @@ _satellite.track('triggerApplicationStart');
 
 								<div class="choose">
 									<button type="submit" class="btn btn-primary" id="Relay Shoe" name="price"
-										value="/images/d.jpg">View</button>
+										value="/images/d.jpg" onclick="_satellite.track('flexiLinkTracking')">View</button>
 								</div>
 							</form>
 						</div>
