@@ -2,7 +2,12 @@
 
 
 	<title>Accel-Shopping | Product/{{list.name}}</title>
+<script>
+function formStart() {
+_satellite.track('globalFormStart');
+}
 
+</script>
 </head>
 
 <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
@@ -213,7 +218,7 @@ name="private account opening process | register">
 										<div class="form-group">
 											<label for="exampleFormControlSelect1">Choose Color</label>
 											<select class="form-control" id="exampleFormControlSelect1"
-												style="text-align: center;width:450px" name="colour" required>
+												style="text-align: center;width:450px" name="colour" onchange="formStart()" required>
 												<option>Black</option>
 												<option>Brown</option>
 												<option>Red</option>
