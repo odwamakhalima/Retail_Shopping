@@ -6,11 +6,10 @@
 function formStart() {
 	    var dataLayer = {
 	    'formisSubmitted' : false,
-        'formName' : 'Testing Forms',
+        'formName' : 'rest',
         'formStatus' : "",
 		}
 }
-_satellite.track('globalFormStart');
 </script>
 
 </head>
@@ -65,8 +64,8 @@ _satellite.track('globalFormStart');
 				<div class="col-sm-3">
 					<div class="shopper-info">
 						<p>Shopper Information</p>
-						<form>
-							<input type="text" placeholder="Display Name" oninput="formStart()">
+						<form data-frmcontainer="rest" id="rest" name="rest">
+							<input type="text" placeholder="Display Name" >
 							<input type="text" placeholder="User Name">
 						</form>
 
