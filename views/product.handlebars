@@ -4,7 +4,12 @@
 	<title>Accel-Shopping | Product/{{list.name}}</title>
 <script>
 function formStart() {
-_satellite.track('globalFormStart');
+var dataLayer = {
+       'formisSubmitted' : false,
+        'formName' : 'testing',
+        'formStatus' : "",
+
+    }
 }
 
 </script>
@@ -205,8 +210,8 @@ _satellite.track('globalFormStart');
 							<span>
 								<span>ZAR R{{list.cost}}</span>
 
-								<form action="/form" method="POST" data-frmcontainer="private account opening process | register" id="private account opening process | register" 
-name="private account opening process | register">
+								<form action="/form" method="POST" data-frmcontainer="testing" id="testing" 
+name="testing">
 									<div>
 										<div></div>
 										<div></div>
@@ -218,7 +223,7 @@ name="private account opening process | register">
 										<div class="form-group">
 											<label for="exampleFormControlSelect1">Choose Color</label>
 											<select class="form-control" id="exampleFormControlSelect1"
-												style="text-align: center;width:450px" name="colour" onchange="formStart()" required>
+												style="text-align: center;width:450px" name="colour" required>
 												<option>Black</option>
 												<option>Brown</option>
 												<option>Red</option>
