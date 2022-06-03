@@ -2,6 +2,64 @@
 
 
 	<title>Accel-Shopping | Product/{{list.name}}</title>
+<script type="text/javascript" language="JavaScript">
+    var dtm_deviceCheck = /Mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
+    var dataLayer = {
+		'ecommerce' : {			
+	product : [{	
+		'category' : "loan",
+		'family' : "Insurance",
+		'sku' : "student loan",
+	    'interestRate' : '12',
+		'price' : 10000,
+		'term' : '42',
+		'monthlyRepayment' : '982.62',
+		'productStatus' : "eligible"
+	}],	
+},
+        "articleName" : "",
+        "articleCategory" : "",
+        "application" : {
+            "applicationID" : "",
+            "applicationName" : "",
+            "applicationStep" : "",
+            "applicationStart" : false,
+            "applicationComplete" : false
+        },
+        "search" : {
+            "filter" : ""
+        },
+        'deviceType' : dtm_deviceCheck, 
+        'domainName' : window.location.hostname,
+        'formisSubmitted' : false,
+        'formName' : 'list',
+        'formStatus' : "",
+        "loginStatus" : "guest",
+        'numSearchResults' : '',
+        //Dynamic Part
+        'pageCategory' : 'Personal',
+        'pageName' : 'Test', 
+        'pageSubSection1' : '',
+        'pageSubSection2' : '',
+        'pageSubSection3' : '',
+        'pageSubSection4' : '',
+        'platformIdentifier' : 'Salesforce Commerce',
+        'search' : {
+            'filter' : ''
+        },
+        'searchTerm' : '',
+        'siteBusinessUnit' : 'PBBSA',
+        'siteCountry' : "South Africa",
+        "siteErrorCode" : "",
+        'siteLanguage' : 'English',
+        'userRegistrationSuccess' : '',
+        'websiteName' : "SBG South Africa",
+        'websiteNameCode' : 'ZA'
+    }
+_satellite.track("globalVirtualPageView");  
+ </script>
+
+
 <script>
 function formStart() {
 var dataLayer = {
@@ -20,7 +78,7 @@ var dataLayer = {
     }
 	_satellite.track('globalFormComplete')
 }
-_satellite.track("globalVirtualPageView")
+ 
 </script>
 </head>
 
