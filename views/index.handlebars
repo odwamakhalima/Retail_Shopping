@@ -4,60 +4,20 @@
 	  <title>Accel-Shopping | Home</title>
 
 	  <script type="text/javascript" language="JavaScript">
-    var dtm_deviceCheck = /Mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
-    var dataLayer = {
-		'ecommerce' : {			
-	product : [{	
-		'category' : "loan",
-		'family' : "Insurance",
-		'sku' : "student loan",
-	    'interestRate' : '12',
-		'price' : 10000,
-		'term' : '42',
-		'monthlyRepayment' : '982.62',
-		'productStatus' : "eligible"
-	}],	
-},
-        "articleName" : "",
-        "articleCategory" : "",
-        "application" : {
-            "applicationID" : "",
-            "applicationName" : "",
-            "applicationStep" : "",
-            "applicationStart" : false,
-            "applicationComplete" : false
-        },
-        "search" : {
-            "filter" : ""
-        },
-        'deviceType' : dtm_deviceCheck, 
-        'domainName' : window.location.hostname,
-        'formisSubmitted' : false,
-        'formName' : 'list',
-        'formStatus' : "",
-        "loginStatus" : "guest",
-        'numSearchResults' : '',
-        //Dynamic Part
-        'pageCategory' : 'Personal',
-        'pageName' : 'Test', 
-        'pageSubSection1' : '',
-        'pageSubSection2' : '',
-        'pageSubSection3' : '',
-        'pageSubSection4' : '',
-        'platformIdentifier' : 'Salesforce Commerce',
-        'search' : {
-            'filter' : ''
-        },
-        'searchTerm' : '',
-        'siteBusinessUnit' : 'PBBSA',
-        'siteCountry' : "South Africa",
-        "siteErrorCode" : "",
-        'siteLanguage' : 'English',
-        'userRegistrationSuccess' : '',
-        'websiteName' : "SBG South Africa",
-        'websiteNameCode' : 'ZA'
-    }
-satellite.track("globalVirtualPageView");  
+function addToCart(){
+		dataLayer.push({
+			'event': 'add_to_cart',
+			'ecommerce': {
+				'items': [
+					{
+						'item_name': '{{list.name}}',       // Name or ID is required.
+						'price': '{{list.cost}}',
+						'item_category': '{{list.category}}'
+					}]
+			}
+		});
+	
+}
  </script>
 </head>
 
@@ -234,7 +194,7 @@ satellite.track("globalVirtualPageView");
 
 								<div class="choose">
 									<button type="submit" class="btn btn-primary" id="Urban Find" name="price"
-										value="/images/b.jpg" onclick="onClick({{list}})" data-id="link_content" data-text="How about now? | Tell me more button click" data-intent="Informational" data-scope="hero banner">View</button>
+										value="/images/b.jpg" onclick="addToCart()" data-id="link_content" data-text="How about now? | Tell me more button click" data-intent="Informational" data-scope="hero banner">View</button>
 								</div>
 							</form>
 						</div>
