@@ -89,20 +89,6 @@ console.log(list);
 
 })
 
-// app.post('/addCart',function (req, res) {
-//     thePrice = req.body.price
-    
-//     retailFact.pricesData(thePrice)
-//     retailFact.allData()
-   
-
-//     if(thePrice === "/images/f.jpg" || thePrice === "/images/g.jpg" || thePrice === "/images/6.jpg" || thePrice === "/images/7.jpg"){
-//         res.redirect('form2')
-//     }
-//     else{
-//     res.redirect('/cart')
-//     }
-// })
 
 app.post('/types2', function (req, res) {
     thePrice = req.body.price
