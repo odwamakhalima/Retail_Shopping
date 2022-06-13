@@ -4,17 +4,58 @@
 
 <script type="text/javascript" language="JavaScript">
 
-		dataLayer.push({
-			'event': 'view_item',
-			'ecommerce': {
-				'items': [
-					{
-						'item_name': '{{list.name}}',       // Name or ID is required.
-						'price': '{{list.cost}}',
-						'item_category': '{{list.category}}'
-					}]
-			}
-		});
+    var dataLayer = {
+		'ecommerce' : {			
+	product : [{	
+		'category' : "loan",
+		'family' : "Insurance",
+		'sku' : "student loan",
+	    'interestRate' : '12',
+		'price' : 10000,
+		'term' : '42',
+		'monthlyRepayment' : '982.62',
+		'productStatus' : "eligible"
+	}],	
+},
+        "articleName" : "",
+        "articleCategory" : "",
+        "application" : {
+            "applicationID" : "",
+            "applicationName" : "Testing App name",
+            "applicationStep" : "Step",
+            "applicationStart" : false,
+            "applicationComplete" : false
+        },
+        "search" : {
+            "filter" : ""
+        },
+        'deviceType' : dtm_deviceCheck, 
+        'domainName' : window.location.hostname,
+        'formisSubmitted' : true,
+        'formName' : 'list',
+        'formStatus' : "complete",
+        "loginStatus" : "guest",
+        'numSearchResults' : '',
+        //Dynamic Part
+        'pageCategory' : 'Personal',
+        'pageName' : 'Test', 
+        'pageSubSection1' : '',
+        'pageSubSection2' : '',
+        'pageSubSection3' : '',
+        'pageSubSection4' : '',
+        'platformIdentifier' : 'Salesforce Commerce',
+        'search' : {
+            'filter' : ''
+        },
+        'searchTerm' : '',
+        'siteBusinessUnit' : 'PBBSA',
+        'siteCountry' : "South Africa",
+        "siteErrorCode" : "",
+        'siteLanguage' : 'English',
+        'userRegistrationSuccess' : '',
+        'websiteName' : "SBG South Africa",
+        'websiteNameCode' : 'ZA'
+    }
 
  </script>
 
@@ -280,7 +321,7 @@ var dataLayer = {
 									</div>
 
 									<div style="padding-top: 1em;">
-										<button type="submit" class="btn btn-primary" id="sub" onclick="formComplete()">Add To
+										<button type="submit" class="btn btn-primary" id="sub" onclick="">Add To
 											Cart</button>
 									</div>
 								</form>
