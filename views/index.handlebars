@@ -6,33 +6,26 @@
 	  <script type="text/javascript" language="JavaScript">
     var dtm_deviceCheck = /Mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
     var dataLayer = {
-		'ecommerce' : {			
-	product : [{	
-		'category' : "loan",
-		'family' : "Insurance",
-		'sku' : "student loan",
-	    'interestRate' : '12',
-		'price' : 10000,
-		'term' : '42',
-		'monthlyRepayment' : '982.62',
-		'productStatus' : "eligible"
-	}],	
+      'ecommerce' : {        
+      'revenueType': "offered"        
+      'additionalRevenue': "122.50"        
 },
         "articleName" : "",
         "articleCategory" : "",
         "application" : {
             "applicationID" : "",
-            "applicationName" : "Testing App name",
-            "applicationStep" : "Step",
+            "applicationName" : ",
+            "applicationStep" : "",
             "applicationStart" : false,
             "applicationComplete" : false
         },
-
-        'deviceType' : dtm_deviceCheck, 
+        "search" : {
+            "filter" : "country:south africa,region:all regions,city:all cities,language:english,arrangement:remote"
+        },
         'domainName' : window.location.hostname,
-        'formisSubmitted' : true,
+        'formisSubmitted' : false,
         'formName' : 'list',
-        'formStatus' : "complete",
+        'formStatus' : "",
         "loginStatus" : "guest",
         'numSearchResults' : '',
         //Dynamic Part
@@ -44,9 +37,9 @@
         'pageSubSection4' : '',
         'platformIdentifier' : 'Salesforce Commerce',
         'search' : {
-            "filter" : "Country:South Africa,Region:All Regions,City:All Cities,Language:English,Arrangement:Remote,Arrangement:Office"
+            'filter' : ''
         },
-        'searchTerm' : 'Test',
+        'searchTerm' : '',
         'siteBusinessUnit' : 'PBBSA',
         'siteCountry' : "South Africa",
         "siteErrorCode" : "",
@@ -56,6 +49,7 @@
         'websiteNameCode' : 'ZA'
     }
 
+_satellite.track('productView')
  </script>
 </head>
 
