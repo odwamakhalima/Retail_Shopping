@@ -24,6 +24,7 @@
         'formName' : 'calculate | see how much you can save',
         'formStatus' : "complete",
         "loginStatus" : "guest",
+		"linkName" : ""
         'numSearchResults' : '',
         //Dynamic Part
         'pageCategory' : 'Personal',
@@ -47,7 +48,19 @@
     }
  </script>
 
+<script>
 
+function testingz() {
+
+var dataLayer = {
+  "linkName" : "Testing button",
+  "linkIntent" : "Navigational",
+  "linkScope" : "cta component"
+    }
+
+}
+
+</script>
 	  <title>Accel-Shopping | Home</title>
 
 	 </head>
@@ -225,7 +238,7 @@
 
 								<div class="choose">
 									<button type="submit" class="btn btn-primary" id="Urban Find" name="price"
-										value="/images/b.jpg" onclick="" data-id="link_content" data-text="How about now? | Tell me more button click" data-intent="Informational" data-scope="hero banner">View</button>
+										value="/images/b.jpg" onclick="testingz()" data-id="link_content" data-text="How about now? | Tell me more button click" data-intent="Informational" data-scope="hero banner">View</button>
 								</div>
 							</form>
 						</div>
