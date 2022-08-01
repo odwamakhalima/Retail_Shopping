@@ -1,19 +1,18 @@
 <head>
 	
-	<title>Accel-Shopping | Product/{{list.name}}</title>
-
-<script type="text/javascript" language="JavaScript">
-
+ <script type="text/javascript" language="JavaScript">
+	  console.log('testing')
+    var dtm_deviceCheck = /Mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
     var dataLayer = {
       'ecommerce' : {        
-      'revenueType': "offered"        
+      'revenueType': "offered",        
       'additionalRevenue': "122.50"        
 },
         "articleName" : "",
         "articleCategory" : "",
         "application" : {
             "applicationID" : "",
-            "applicationName" : ",
+            "applicationName" : "",
             "applicationStep" : "",
             "applicationStart" : false,
             "applicationComplete" : false
@@ -23,7 +22,7 @@
         },
         'domainName' : window.location.hostname,
         'formisSubmitted' : false,
-        'formName' : 'list',
+        'formName' : 'calculate | see how much you can save',
         'formStatus' : "",
         "loginStatus" : "guest",
         'numSearchResults' : '',
@@ -47,8 +46,12 @@
         'websiteName' : "SBG South Africa",
         'websiteNameCode' : 'ZA'
     }
+ </script>
 
-_satellite.track('productView')
+
+	<title>Accel-Shopping | Product/{{list.name}}</title>
+
+
  </script>
 
 {{!-- <script>
