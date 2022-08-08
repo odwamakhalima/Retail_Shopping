@@ -3,13 +3,45 @@
 	  console.log('testing')
     var dtm_deviceCheck = /Mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
     var dataLayer = {
-       "challengeName": "challenge four", 
-       "challengeDesc": "challenge description for that specific challenge",
-       "challengeAccepted": false,
-       "challengeMissed": false, 
-       "challengeCompleted": true, 
+        "articleName" : "",
+        "articleCategory" : "",
+        "application" : {
+            "applicationID" : "",
+            "applicationName" : "",
+            "applicationStep" : "",
+            "applicationStart" : false,
+            "applicationComplete" : false
+        },
+        "search" : {
+            "filter" : ""
+        },
+        'deviceType' : dtm_deviceCheck,
+        'domainName' : window.location.hostname,
+        'formisSubmitted' : false,
+        'formName' : '',
+        'formStatus' : "",
+        "loginStatus" : "guest",
+        'numSearchResults' : '', //Dynamic Part
+        'pageCategory' : '',
+        'pageName' : '',
+        'pageSubSection1' : '',
+        'pageSubSection2' : '',
+        'pageSubSection3' : '',
+        'pageSubSection4' : '',
+        'platformIdentifier' : 'Salesforce Community',
+        'search' : {
+            'filter' : ''
+        },
+        'searchTerm' : '',
+        'siteBusinessUnit' : 'PBUG',
+        'siteCountry' : "Uganda",
+        "siteErrorCode" : "",
+        'siteLanguage' : 'English',
+        'userRegistrationSuccess' : '',
+        'websiteName' : "Uganda Account OnBoarding",
+        'websiteNameCode' : 'UG'
     }
-
+_satellite.track("globalVirtualPageView");
  </script>
 
 <script type="text/javascript" language="JavaScript">
