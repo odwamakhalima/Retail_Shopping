@@ -1,4 +1,16 @@
 <head>
+<script type="text/javascript" language="JavaScript">
+
+var satelliteTrackPlaceholder=_satellite.track //hold on to the original .track function
+_satellite.track=function(name){ //rewrite it so you can make it extra special
+
+   //console.log("Data layer at this time:" + JSON.stringify(digitalData))
+   satelliteTrackPlaceholder('globalVirtualPageView') //fire the original .track functionality
+}
+
+</script>
+
+
  <script type="text/javascript" language="JavaScript">
 	  console.log('testing')
     var dtm_deviceCheck = /Mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
